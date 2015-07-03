@@ -1,0 +1,75 @@
+# Objective-c coding style
+
+#### 1. 统一使用US英语
+<p style='color:#0c0'>符合规则的：</p>
+	UIColor *myColor = [UIColor whiteColor];  
+<p style='color:#c00'>不符合规则的：</p>
+	UIColor *myColour = [UIColor whiteColor];  
+	UIColor *yanse = [UIColor whiteColor];
+#### 2. 使用#pragma mark - 对方法进行分类
+<p style='color:#0c0'>符合规则的：</p>
+	#pragma mark - Lifecycle
+	
+	- (instancetype)init {}  
+	
+	- (void)dealloc {}  
+
+	- (void)viewDidLoad {}
+  
+	- (void)viewWillAppear:(BOOL)animated {}  
+
+	- (void)didReceiveMemoryWarning {} 
+	 
+	#pragma mark - Custom Accessors  
+	
+	- (void)setCustomProperty:(id)value {}  
+	
+	- (id)customProperty {}  
+	
+	#pragma mark - IBActions  
+	
+	- (IBAction)submitData:(id)sender {}  
+	
+	#pragma mark - Public  
+	
+	- (void)publicMethod {}  
+	
+	#pragma mark - Private  
+	
+	- (void)privateMethod {}  
+	
+	#pragma mark - Protocol conformance  
+	
+	#pragma mark - UITextFieldDelegate  
+	
+	#pragma mark - UITableViewDataSource  
+	
+	#pragma mark - UITableViewDelegate  
+	
+	#pragma mark - NSCopying  
+	
+	- (id)copyWithZone:(NSZone *)zone {}  
+	
+	#pragma mark - NSObject  
+	
+	- (NSString *)description {}
+#### 3. 方法以及#pragma mark -间空一行
+<p style='color:#0c0'>符合规则的：</p>
+	#pragma mark - Lifecycle
+	
+	- (instancetype)init {}  
+	
+	- (void)dealloc {}  
+
+	- (void)viewDidLoad {}
+  
+	- (void)viewWillAppear:(BOOL)animated {}  
+
+	- (void)didReceiveMemoryWarning {}   
+<p style='color:#c00'>不符合规则的：</p>
+	#pragma mark - Lifecycle
+	- (instancetype)init {}  
+	- (void)dealloc {}  
+	- (void)viewDidLoad {}
+	- (void)viewWillAppear:(BOOL)animated {}  
+	- (void)didReceiveMemoryWarning {} 
