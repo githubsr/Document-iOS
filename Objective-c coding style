@@ -53,7 +53,34 @@
 	#pragma mark - NSObject  
 	
 	- (NSString *)description {}
-#### 3. 方法以及#pragma mark -间空一行
+#### 3. 在.h文件中方法以及#pragma mark -间不空行，@property间不空行，但两部分之间空一行
+<p style='color:#0c0'>符合规则的：</p>
+	@property NSString (nonatomic) *name;
+	@property NSInteger length;
+
+	#pragma mark - Lifecycle
+	- (instancetype)init {}  
+	- (void)dealloc {}  
+	- (void)viewDidLoad {}
+	- (void)viewWillAppear:(BOOL)animated {}  
+	- (void)didReceiveMemoryWarning {}   
+<p style='color:#c00'>不符合规则的：</p>
+	@property NSString (nonatomic) *name;
+	
+	@property NSInteger length;
+
+	#pragma mark - Lifecycle
+	
+	- (instancetype)init {}
+	
+	- (void)dealloc {}  
+	
+	- (void)viewDidLoad {}
+
+	- (void)viewWillAppear:(BOOL)animated {}
+	  
+	- (void)didReceiveMemoryWarning {} 
+#### 4. 在.m文件中方法以及#pragma mark -间空一行
 <p style='color:#0c0'>符合规则的：</p>
 	#pragma mark - Lifecycle
 	
@@ -72,4 +99,4 @@
 	- (void)dealloc {}  
 	- (void)viewDidLoad {}
 	- (void)viewWillAppear:(BOOL)animated {}  
-	- (void)didReceiveMemoryWarning {} 
+	- (void)didReceiveMemoryWarning {}
