@@ -100,3 +100,10 @@
 	- (void)viewDidLoad {}
 	- (void)viewWillAppear:(BOOL)animated {}  
 	- (void)didReceiveMemoryWarning {}
+#### 5. @property的默认属性值不写，只注明非默认值
+<p style='color:#0c0'>符合规则的：</p>
+	@property (weak, nonatomic) NSString *property1;
+	@property (nonatomic) NSString *property2;
+	@property NSString *property3;
+<p style='color:#c00'>不符合规则的：</p>
+	@property (strong, atomic) NSString *property1;
