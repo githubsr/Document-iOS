@@ -107,3 +107,46 @@
 	@property NSString *property3;
 <p style='color:#c00'>不符合规则的：</p>
 	@property (strong, atomic) NSString *property1;
+#### 6. 选择，循环结构语句块与上一条语句之间空一行
+<p style='color:#0c0'>符合规则的：</p>
+	NSInteger a;
+	NSInteger b;
+	
+	if (a > b) {
+	   NSLog(@"a > b");
+	}
+<p style='color:#c00'>不符合规则的：</p>
+	NSInteger a;
+	NSInteger b;
+	if (a > b) {
+	   NSLog(@"a > b");
+	}
+#### 7. 缩进使用4个空格，可在Xcode->Preferences->Text Editing中设置
+#### 8. 方法及其他语句块的大括号总是在同一行语句打开但在新行中关闭
+<p style='color:#0c0'>符合规则的：</p>
+	if (success) {  
+	    //Do something  
+	} else {  
+	    //Do something else  
+	}
+<p style='color:#c00'>不符合规则的：</p>
+	if (success)
+	{  
+	    //Do something  
+	} else 
+	{  
+	    //Do something else  
+	}
+#### 9. 选择，循环结构语句块中关键字，条件，大括号之间都有一个空格
+<p style='color:#0c0'>符合规则的：</p>
+	if (success) {  
+	    //Do something  
+	} else {  
+	    //Do something else  
+	}
+<p style='color:#c00'>不符合规则的：</p>
+	if(success){  
+	    //Do something  
+	}else{  
+	    //Do something else  
+	}
